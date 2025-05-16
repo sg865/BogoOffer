@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BOGO Offer</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <div class="card">
+    <div class="title">YAY! It's BOGO</div>
+
+    <div class="option" data-units="1" data-price="10" data-discount="10">
+      <label>
+        <input type="radio" name="unit" value="1" checked />
+        1 Unit <span class="discount">10% Off</span>
+      </label>
+      <div class="price">$10.00 USD</div>
+    </div>
+
+    <div class="option" data-units="2" data-price="18" data-discount="20">
+      <div class="most-popular">MOST POPULAR</div>
+      <label>
+        <input type="radio" name="unit" value="2" />
+        2 Unit <span class="discount">20% Off</span>
+      </label>
+      <div class="dropdowns" id="dropdowns-2">
+        <select>
+          <option selected disabled>Size</option>
+          <option>S</option>
+          <option>M</option>
+          <option>L</option>
+        </select>
+        <select>
+          <option selected disabled>Colour</option>
+          <option>Black</option>
+          <option>White</option>
+        </select>
+      </div>
+      <div class="dropdowns" id="dropdowns-2b">
+        <select>
+          <option selected disabled>Size</option>
+          <option>S</option>
+          <option>M</option>
+          <option>L</option>
+        </select>
+        <select>
+          <option selected disabled>Colour</option>
+          <option>Black</option>
+          <option>White</option>
+        </select>
+      </div>
+      <div class="price">$18.00 USD</div>
+    </div>
+
+    <div class="option" data-units="3" data-price="24" data-discount="30">
+      <label>
+        <input type="radio" name="unit" value="3" />
+        3 Unit <span class="discount">30% Off</span>
+      </label>
+      <div class="price">$24.00 USD</div>
+    </div>
+
+    <div class="free-delivery">Free Delivery</div>
+    <div class="price" id="total-price">Total : $10.00 USD</div>
+
+    <!-- <button class="add-to-cart add-to-cart-btn" onclick="window.location.href='cart.html'">+ Add to Cart</button> -->
+     <button class="add-to-cart" id="add-to-cart-btn">+ Add to Cart</button>
+
+  </div>
+  <script src="index.js"></script>
+</body>
+
+</html>

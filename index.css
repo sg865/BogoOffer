@@ -1,0 +1,97 @@
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.title {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: #e91e63;
+  margin-bottom: 20px;
+}
+
+.option {
+  border: 2px solid #ccc;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.option:hover{
+     transform: scale(1.05);
+  box-shadow: 0 4px 16px rgba(233, 30, 99, 0.15);
+  z-index: 1;
+  border-color: #e91e63;
+  transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+}
+
+.option input[type="radio"] {
+  margin-right: 8px;
+}
+
+.option.selected {
+  border-color: #e91e63;
+}
+
+.discount {
+  font-size: 12px;
+  color: white;
+  background: #e91e63;
+  padding: 2px 6px;
+  border-radius: 4px;
+  margin-left: 10px;
+}
+
+.most-popular {
+  position: absolute;
+  right: -10px;
+  top: -10px;
+  background: #ff4081;
+  color: white;
+  font-size: 10px;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.dropdowns {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.price {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.free-delivery {
+  color: orange;
+  font-size: 12px;
+}
+
+.add-to-cart {
+  background: #ff4081;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  width: 100%;
+  margin-top: 15px;
+  font-size: 14px;
+  cursor: pointer;
+}
